@@ -66,3 +66,262 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 7, ../sass/main/__primary.scss */
+h1, h2, h3, h4, p, a {
+  font-family: sans-serif;
+}
+
+/* line 10, ../sass/main/__primary.scss */
+h1 {
+  color: #225378;
+  font-size: 45px;
+  margin: 15px 0;
+}
+
+/* line 15, ../sass/main/__primary.scss */
+h2 {
+  color: #333333;
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+/* line 20, ../sass/main/__primary.scss */
+h3 {
+  color: #1695a3;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+/* line 25, ../sass/main/__primary.scss */
+h4 {
+  color: #225378;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* line 30, ../sass/main/__primary.scss */
+p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* line 35, ../sass/main/__primary.scss */
+a {
+  color: #225378;
+  text-decoration: underline;
+}
+
+/* line 41, ../sass/main/__primary.scss */
+a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+
+/* line 45, ../sass/main/__primary.scss */
+a:visited {
+  color: #1695a3;
+  text-decoration: underline;
+}
+
+/* line 49, ../sass/main/__primary.scss */
+#master-container {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 54, ../sass/main/__primary.scss */
+.titanic {
+  float: none;
+}
+
+/* line 57, ../sass/main/__primary.scss */
+.btn-container {
+  margin-top: 15px;
+}
+/* line 60, ../sass/main/__primary.scss */
+.btn-container .primary-btn {
+  background-color: #97bd8f;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* line 1, ../sass/main/__header.scss */
+.header {
+  background-color: #225378;
+  margin: 0 auto;
+}
+
+/* line 6, ../sass/main/__header.scss */
+.header__topper {
+  height: 100px;
+}
+
+/* line 9, ../sass/main/__header.scss */
+.header__nav {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+/* line 14, ../sass/main/__header.scss */
+.header__nav .nav {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  margin: 0 auto;
+  position: absolute;
+}
+/* line 21, ../sass/main/__header.scss */
+.header__nav .nav .menu-action {
+  color: #e8e8e8;
+  background-color: #1695a3;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+/* line 31, ../sass/main/__header.scss */
+.header__nav .nav .nav__item {
+  width: 100%;
+  background-color: #97bd8f;
+  border-bottom: 5px #1695a3;
+  margin-bottom: 8px;
+  text-align: center;
+  display: none;
+}
+/* line 39, ../sass/main/__header.scss */
+.header__nav .nav .nav__item :hover {
+  background-color: #1695a3;
+  color: #e8e8e8;
+  border-bottom: 5px #225378;
+}
+/* line 46, ../sass/main/__header.scss */
+.header__nav .nav .nav__link {
+  padding: 20px 0;
+  display: block;
+  color: #225378;
+  text-decoration: none;
+}
+/* line 52, ../sass/main/__header.scss */
+.header__nav .nav .nav__link :hover {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+/* line 56, ../sass/main/__header.scss */
+.header__nav .nav .nav__link :visited {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/main/__body.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 5, ../sass/main/__body.scss */
+.hero__container {
+  height: auto;
+}
+/* line 8, ../sass/main/__body.scss */
+.hero__container .hero__image {
+  height: auto;
+}
+/* line 11, ../sass/main/__body.scss */
+.hero__container .hero__image img {
+  width: 100%;
+}
+
+/* line 16, ../sass/main/__body.scss */
+.block {
+  width: 100%;
+  padding: 35px 25px;
+  box-sizing: border-box;
+  margin: 50px 0 0 0;
+}
+
+/* line 22, ../sass/main/__body.scss */
+.block-grey {
+  background-color: #e8e8e8;
+}
+
+/* line 28, ../sass/main/__body.scss */
+.review-block {
+  background-color: #97bd8f;
+  color: #e8e8e8;
+  text-align: center;
+  padding: 35px 25px;
+}
+
+/* line 39, ../sass/main/__body.scss */
+.block-left .block-left__image {
+  display: none;
+}
+
+/* line 45, ../sass/main/__body.scss */
+.block-right .block-right__image {
+  display: none;
+}
+
+/* line 4, ../sass/main/__footer.scss */
+.footer__top {
+  background-color: #225378;
+  padding: 45px 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 10, ../sass/main/__footer.scss */
+.footer__top .social {
+  width: auto;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+/* line 14, ../sass/main/__footer.scss */
+.footer__top .social img {
+  width: 75px;
+  height: auto;
+  margin: 0 15px;
+}
+/* line 20, ../sass/main/__footer.scss */
+.footer__top p {
+  color: #e8e8e8;
+}
+/* line 23, ../sass/main/__footer.scss */
+.footer__top a {
+  color: #e8e8e8;
+}
+
+/* line 27, ../sass/main/__footer.scss */
+.footer__bottom {
+  padding: 45px 15px;
+  box-sizing: border-box;
+}
+/* line 31, ../sass/main/__footer.scss */
+.footer__bottom .footer__nav {
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* line 35, ../sass/main/__footer.scss */
+.footer__bottom a {
+  color: #225378;
+  font-size: 24px;
+  text-decoration: none;
+  line-height: 30px;
+}
+/* line 42, ../sass/main/__footer.scss */
+.footer__bottom a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+/* line 46, ../sass/main/__footer.scss */
+.footer__bottom a:visited {
+  text-decoration: none;
+  color: #1695a3;
+}
+/* line 50, ../sass/main/__footer.scss */
+.footer__bottom p {
+  font-size: 12px;
+  line-height: 16px;
+}
