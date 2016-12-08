@@ -18,7 +18,7 @@
         
         <div class="header__topper">
             <div class="header__topper__left">
-            	<h1>Shaq is the boss</h1>
+            	<img class="logo" src="images/logo_white.png" alt="Ugly Tub Logo" />
             </div>
             <div class="header__topper__right">
             
@@ -32,8 +32,16 @@
                 <li class="nav__item">
                     <a href="#" class="nav__link">About Us</a>
                 </li>
-                <li class="nav__item">
+                <li class="nav__item dropper">
                     <a href="#" class="nav__link">Education</a>
+                    <ul class="nav__dropdown">
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Post Education</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav__item">
                     <a href="#" class="nav__link">Products & Services</a>
@@ -49,18 +57,18 @@
         
     </div> <!-- end header -->
     
-    
-    
-    <div class="container" id="container">
-    
-    	<div class="hero__container">
+    <div class="hero__container">
         	<div class="hero__image">
             	<img src="images/home-page_placeholder.jpg" alt="slider-image" />
             </div>
             
         </div> <!-- end of hero -->
+    
+    <div class="container" id="container">
+    
+    	
         
-        <div class="block main-block">
+        <div class="block main-block" id="main-block">
         	<h1>Ugly Tub is the smart choice</h1>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
@@ -128,6 +136,19 @@ $(Document).ready(function(){
 			nav=0;
 		}
 	});
+    
+    $('.dropper').hover(function(){
+       // var child = $(this).find('.nav__dropdown');
+        //alert(child);
+        $('ul:first', this).slideDown(100);}, function(){
+        $('ul:first', this).slideUp(100);
+        
+    })
+    
+    //$('.dropper').mouseenter(function(){
+    //    $('ul:first', this).slideDown();  
+    //})
+    //$('.dropper').mouseleave(function(){})
 		
 });
 </script>
