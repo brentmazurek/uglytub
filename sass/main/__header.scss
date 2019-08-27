@@ -1,0 +1,118 @@
+.header{
+	background-color: $dark-blue;
+	margin:0 auto;
+    height:185px;
+
+}
+.header__topper{
+	height:125px;
+    
+    .header__topper__left{
+        width:230px;
+        margin: 25px 40px;
+        float:left;
+        
+        .logo{
+            max-width:100%;
+        }
+    }
+    
+}
+.header__nav{
+	width:100%;
+	display:block;
+	position:relative;
+	
+	@media (min-width: 768px){
+		height:56px;			
+	}
+	
+	.nav{
+		display:block;
+		width:100%;
+		overflow:auto;
+		margin: 0 auto;
+		position:absolute;
+        z-index:99;
+        background-color:$dark-blue;
+		
+		.menu-action{
+			color:$grey;
+			background-color:$light-blue;
+			padding:15px 0;
+			text-align:center;
+			width:100%;
+			cursor:pointer;
+			margin-bottom:8px;
+			
+			@media (min-width: 768px){
+				display:none;
+			}
+			
+		}
+		.nav__item{
+			width:100%;
+			background-color: $green;
+			border-bottom:5px $light-blue;
+			margin-bottom:8px;
+			text-align:center;
+			display:none;
+			
+			:hover{
+				background-color:$light-blue;
+				color:$grey;
+				border-bottom:5px $dark-blue;
+			}
+			
+			@media (min-width: 768px){
+				width:20%;
+				float:left;	
+				display:block;
+				margin-bottom:none;
+			}
+            
+            .nav__dropdown{
+                 display:none;;
+                position:relative;
+                z-index:99;
+                
+                .dropdown__item{
+                    text-align:center;
+                    background-color: $green;
+                    
+                    :hover{
+                        background-color:$light-blue;
+				        color:$grey;
+                    }
+                    .dropdown__link{
+                        padding:20px;
+                        color:$dark-blue;
+                        text-decoration:none;
+                        display:block;
+                        
+                        :hover{
+                            color:$grey;
+				            text-decoration:none;
+                        }
+                    }
+                }
+            }
+		}
+		
+		.nav__link{
+			padding:20px 0;
+			display:block;
+			color:$dark-blue;
+			text-decoration:none;
+			
+			:hover{
+				color:$grey;
+				text-decoration:none;
+			}
+			:visited{
+				text-decoration:none;
+			}
+		}
+		
+	}
+}
